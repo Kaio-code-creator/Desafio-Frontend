@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(196, 197, 196);
+        }
+
+
+        .caixa {
+            width: 220px;
+            height: 320px;
+            margin-top: 170px;
+            border: 3px solid black;
+        }
+        .ima {
+            width: 220px;
+            height: 320px;
+        }
+
+       .caixa.d {
+            width: 240px;
+            height: 320px;
+            border: 3px solid black;
+        }
+
+        #T {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .texM {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .textm {
+            
+        }
+        </style>
 </head>
 <body>
-    <div class="caixa"><img src="images/image-product-desktop.jpg" alt="Imagem">
+    <div class="caixa">
+        <img class="ima" src="images/image-product-desktop.jpg" alt="Imagem">
+    </div>
+
+    <div class="caixa d"><div id="T"> Perfume</div>
+        <div class="texM"><strong>Gabriele<br>Essence Eau <br>De Perfurm</strong></div>
+        <div class="textm">A floral solar and voluptuous <br> interpretation composed by <br> Oliver Polge Perfurmer.Creator <br> for the House of CHANSEL</div>
     </div>
 
 </body>
