@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .feedback-box {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #646363;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+         .question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .option input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        #submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <title>Avaliação</title>
+</head>
+<body>
+    <div class="feedback-box">
+        <div class="question">
+            Como você nos avalia? <p>
+                please let us know how we did with your support <br>
+                request. All feedback is appreciated to help us <br>
+                improve our offering!
+            </p>
+        </div>
+        <div class="options">
+            <label class="option">
+                <input type="checkbox">
+                1
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                2
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                3
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                4
+            </label>
+            <label class="option">
+                <input type="checkbox">
+                5
+            </label>
+        </div>
+        <button id="submit-button">Enviar</button>
+    </div>
+</body>
+</html>
