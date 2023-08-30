@@ -3,82 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2</title>
+    <title>Mostrar/ocultar descrição</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(196, 197, 196);
+            height: 100vh;
+            margin: 0;
         }
 
-
-        .caixa {
-            width: 220px;
-            height: 320px;
-            margin-top: 170px;
-            border: 3px solid black;
-        }
-        .ima {
-            width: 220px;
-            height: 320px;
-        }
-
-       .caixa.d {
-            width: 240px;
-            height: 320px;
-            border: 3px solid black;
-        }
-
-        #T {
-            text-align: center;
-            font-style: italic;
-        }
-
-        .texM {
-            font-size: 30px;
+        .container {
             text-align: center;
         }
 
-        .textm {
-            text-align: center;
+        .toggle {
+            cursor: pointer;
         }
 
-        .num {
-            font-size: 30px;
-            color: green;
-            margin-top: 20px;
-            margin-left: 20px;
+        .description {
+            display: none;
+            margin-top: 5px;
         }
-
-        .num i {
-            text-decoration: line-through; 
-            color: black;
-            font-size: 20px;
-            margin-left: 30px;
-        }
-
-        .bu {
-            background-color: green;
-            margin-top: 18px;
-            margin-left: 45px;
-            color: black;
-            width: 150px;
-            height: 40px;
-        }
-        </style>
+    </style>
 </head>
 <body>
-    <div class="caixa">
-        <img class="ima" src="images/image-product-desktop.jpg" alt="Imagem">
+    <div class="container">
+        <p class="toggle"> Qual o meu jogo favorito?</p>
+        <div class="description">Rogue Galaxy</div>
+
+        <p class="toggle">Anime favorito?</p>
+        <div class="description">Dragon Ball </div>
     </div>
 
-    <div class="caixa d"><div id="T"> Perfume</div>
-        <div class="texM"><strong>Gabriele<br>Essence Eau <br>De Perfurm</strong></div>
-        <div class="textm">A floral solar and voluptuous <br> interpretation composed by <br> Oliver Polge, Perfurmer.Creator <br> for the House of CHANSEL</div>
-        <div class="num"> $149.99 <i>$169.00</i></div>
-        <button class="bu">Carrinho</button>
-    </div>
+    <script>
+        const toggleElements = document.querySelectorAll('.toggle');
 
+        toggleElements.forEach(element => {
+            element.addEventListener('click', () => {
+                const description = element.nextElementSibling;
+                if (description.style.display === 'none') {
+                    description.style.display = 'block'; 
+                } else {
+                    description.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
