@@ -22,10 +22,13 @@
             let nomem = window.prompt('Qual é o seu nome?')
             let nomep = window.prompt('Qual é o nome do seu pai?')
             let nomemm = window.prompt('Qual o nome da sua mãe?')
-            let res = window.document.getElementById('resultado1')
+            let res1 = window.document.getElementById('resultado1')
             let res2 = window.document.getElementById('resultado2')
             let res3 = window.document.getElementById('resultado3')
-            res.innerHTML = `<p>Olá. <strong>${nomem}</strong>`
+            res1.innerHTML = `<p>Olá. <strong>${nomem}</strong></p>`
+            res2.innerHTML = `<p>Seu pai se chama <strong>${nomep}</strong></p>`
+            res3.innerHTML = `<p>Sua mãe se chama <strong>${nomemm}</strong></p>`
+            
         }
     </script>
 </body>
