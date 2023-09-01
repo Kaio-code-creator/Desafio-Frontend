@@ -1,5 +1,5 @@
-let contador = 0
-let res = document.querySelector('section#result')
+var contador = 0
+var res = document.querySelector('section#result')
 
 function contar() {
     contador ++
