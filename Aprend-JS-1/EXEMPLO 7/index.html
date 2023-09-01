@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button onclick="calcular()">Calcular média</button>
+    <section id="text">
+        O resultado vai aparecer aqui...
+    </section>
+
+    <script>
+        let nom = window.prompt('Qual é o nome do aluno?')
+        let n1 = Number(window.prompt(`Qual foi a primeira nota de ${nom}?`))
+        let n2 = Number(window.prompt(`Além de ${n1}, qual foi a outra nota de ${nom}?`))
+        let text = document.querySelector('section#text')
+        med = (n1 + n2)/2
+
+        text.innerHTML = (`<p> Calculando a média final de <strong>${nom}</strong></p>
+        <p>As notas obtidas foram <strong>${n1}</strong> e <strong>${n2}</strong></p>
+        <p> A média final será <strong>${med}</strong>.`)
+    </script>
+</body>
+</html>
