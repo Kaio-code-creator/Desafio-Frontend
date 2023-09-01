@@ -2,7 +2,7 @@ var contador = 0
 var res = document.querySelector('section#result')
 
 function contar() {
-    contador ++
+    contador = contador + 1
     res.innerHTML `<p> O contador está com <mark>${contador}</mark> cliques.</p>`
 }
 
