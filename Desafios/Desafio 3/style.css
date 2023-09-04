@@ -1,0 +1,72 @@
+#h5 {
+    text-align: center;
+    color: red;
+}
+
+#h1 {
+    text-align: center;
+}
+#p1 {
+    text-align: center;
+    color: rgb(46, 45, 45);
+}
+
+.d {
+    width: 326px;
+    position: relative;
+    left: 20px;
+    display: inline-block;
+}
+
+#d1 {
+    color: red;
+    font-size: 70px;
+}
+
+#vh {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#pva {
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+.caixa {
+    width: 1000px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Adiciona um espaçamento entre as caixas */
+    margin-left: 165px;
+}
+
+#perfil {
+    border-radius: 50%;
+    width: 5%;
+}
+
+#center {
+    text-align: center;
+}
+
+#text {
+    margin-left: 500px;
+}
+
+button {
+    margin-left: 15px;
+    background-color: rgb(104, 10, 10);
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+}
