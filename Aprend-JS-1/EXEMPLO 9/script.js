@@ -1,13 +1,37 @@
-let contador = 0 
-let res = document.querySelector('section#result')
-
+var contador = 0
+var res = document.querySelector('section#result')
 
 function contar() {
-    contador ++ 
-    res.innerHTML = (`<p>O contador está com ${contador} cliques.</p>`)
+    contador = contador + 1
+    res.innerHTML (`O conatdor está em ${contador} cliques`)
 }
 
 function zerar() {
     contador = 0
     res.innerHTML = null
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
