@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | 3-column preview card component</title>
   <style>
-   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
 
    .caixa {
     width: 250px;
     height: 400px;
     margin-top: 100px;
    }
-
-   @media (min-width: 768px) {
-    .caixa {
-        width: calc(33.33% - 20px); /* Exibe as caixas em 3 colunas lado a lado em telas maiores */
-      }
-    #T {
-      font-size: 16px;
-    }
-    }
-
    .caixa.amarela {
     background-color: rgb(192, 112, 8);
    }
@@ -56,9 +47,36 @@
     margin-left: 30px;
     
   }
-  </style>
+
+@media only screen and (min-width: 310px) and (max-width: 375px) {
+ .caixa {
+  width: 200px;
+  height: 300px;
+}
+  main {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 1023px)  {
+  .caixa {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+}
+  main {
+    display: flow-root;
+  }
+  .imagem {
+    margin-top: 10px;
+  }
+}
+
+
+</style>
 </head>
 <body>
+  <main>
     <div class="caixa amarela">
       <img class="imagem" src="images/favicon-32x32.png" alt="imagem">
       <div id="T">Sedans</div> <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
@@ -78,5 +96,6 @@
       <div id="T">Luxury</div> <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
       rental and arrive in style.</p>
     </div>
+  </main>
 </body>
 </html>
