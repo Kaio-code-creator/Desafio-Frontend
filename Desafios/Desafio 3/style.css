@@ -70,3 +70,81 @@ button {
 footer {
     text-align: center;
 }
+
+@media (max-width: 320px) {
+    .d {
+        width: auto; /* Remove a largura fixa */
+        left: 0; /* Remove o deslocamento lateral */
+        display: block; /* Define como bloco para ocupar a largura total */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #d1 {
+        font-size: 40px; /* Reduz o tamanho do texto */
+    }
+
+    img {
+        width: 80%; /* Reduz o tamanho da imagem */
+    }
+
+    #pva {
+        margin-left: 0; /* Remove a margem à esquerda */
+        text-align: center; /* Centraliza o texto */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    .caixa {
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    #text {
+        margin-left: 20px; 
+        text-align: center; /* Centraliza o texto */
+        mar
+    }
+
+    button {
+        margin-left: 200px; 
+        margin-top: 20px; /* Reduz o espaçamento superior */
+    }
+   
+}
+
+@media (max-width: 375px) {
+    .d {
+        width: auto;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    #d1 {
+        font-size: 50px; /* Reduz o tamanho do texto */
+    }
+
+    img {
+        width: 80%; /* Reduz o tamanho da imagem */
+    }
+
+    #pva {
+        margin-left: 0;
+        text-align: center;
+        font-size: 18px; /* Reduz o tamanho da fonte */
+    }
+
+    .caixa {
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-left: 0;
+    }
+
+    #text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

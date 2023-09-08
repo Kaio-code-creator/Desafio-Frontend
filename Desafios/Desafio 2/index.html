@@ -13,6 +13,13 @@
             margin: 0;
         }
 
+        .box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
         .container {
             text-align: center;
         }
@@ -25,15 +32,22 @@
             display: none;
             margin-top: 5px;
         }
+
+        #image {
+            margin-right: 100px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <p class="toggle"> Qual o meu jogo favorito?</p>
-        <div class="description">Rogue Galaxy</div>
+    <div class="box">
+        <div class="container">
+            <img id="image" src="imagens/favicon-32x32.png" alt="Marca">
+            <p class="toggle"> Qual o meu jogo favorito?</p>
+            <div class="description">Rogue Galaxy</div>
 
-        <p class="toggle">Anime favorito?</p>
-        <div class="description">Dragon Ball </div>
+            <p class="toggle">Anime favorito?</p>
+            <div class="description">Dragon Ball </div>
+        </div>
     </div>
 
     <script>
@@ -52,3 +66,6 @@
     </script>
 </body>
 </html>
+
+
+
