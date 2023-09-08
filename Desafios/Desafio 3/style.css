@@ -111,7 +111,7 @@ footer {
    
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 1024px) {
     .d {
         width: auto;
         left: 0;
@@ -124,7 +124,7 @@ footer {
     }
 
     img {
-        width: 80%; /* Reduz o tamanho da imagem */
+        width: 50%; /* Reduz o tamanho da imagem */
     }
 
     #pva {
