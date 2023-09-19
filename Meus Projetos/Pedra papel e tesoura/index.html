@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedra, Papel e Tesoura</h1>
+    <p>Escolha sua jogada:</p>
+    <div>
+        <img src="tesoura.png" alt="Tesoura" id="tesoura">
+        <img src="pedra.png" alt="Pedra" id="pedra">
+        <img src="papel.png" alt="Papel" id="papel">
+    </div>
+    <p id="result">Esperando sua jogada...</p>
+    <p id="score">Pontos: Você 0 - 0 Máquina</p>
+    <button id="reset">Resetar</button>
+</body>
+</html>
