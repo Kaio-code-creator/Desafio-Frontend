@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caixa com Imagem e Descrição</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
         img {
             height: 150px;
         }
-        .quad {
-            height: 400px;
-            
-        } 
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        ul {
+            margin-right: 40px;
+        }
     </style>
 </head>
 <body>
-    <div class="quad">
+    <div class="container">
         <a href="Pedra papel e tesoura/index.html">
-            <img src="../Imagens/Pedra, Papel e tesoura.jpg" alt=""> 
+            <img src="../Imagens/Pedra, Papel e tesoura.jpg" alt="Imagem">
         </a>
+            <ul>
+                <ol>Pedra vence Tesoura: A pedra quebra a tesoura.</ol>
+                <ol>Tesoura vence Papel: A tesoura corta o papel.</ol>
+                <ol>Papel vence Pedra: O papel cobre a pedra.</ol>
+            </ul>
     </div>
 </body>
 </html>
