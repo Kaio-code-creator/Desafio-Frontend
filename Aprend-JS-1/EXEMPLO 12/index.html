@@ -11,6 +11,7 @@
     <section id="txt"><p>O resultado vem aqui</p></section>
 
     <script>
+        function calcular() {
         let n1 = Number(window.prompt('Digite um número:'))
         tipo = (n1 % 2)
       
@@ -20,7 +21,8 @@
             tipo = '<strong>Impar</strong>'
         }
         let txt = document.querySelector('section#txt')
-        txt.innerHTML = `O número ${n1} que foi digitado é ${tipo}`
-    </script>
+        txt.innerHTML = `<p>O número ${n1} que foi digitado é ${tipo}</p>`
+    }
+        </script>
 </body>
 </html>
