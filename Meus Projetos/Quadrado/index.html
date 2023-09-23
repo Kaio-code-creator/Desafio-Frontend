@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mover Quadrado com Setas</title>
+    <style>
+        #quadrado {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado"></div>
+
+    <script>
+        const quadrado = document.getElementById("quadrado");
+        let posicaoX = 0;
+        let posicaoY = 0;
+        const velocidade = 10;
+
+        function moverQuadrado(e) {
+            switch (e.key) {
+                case "ArrowLeft":
+                    posicaoX -= velocidade;
+                    break;
+                case "ArrowRight":
+                    posicaoX += velocidade;
+                    break;
+                case "ArrowUp":
+                    posicaoY -= velocidade;
+                    break;
+                case "ArrowDown":
+                    posicaoY += velocidade;
+                    break;
+            }
+
+            quadrado.style.left = posicaoX + "px";
+            quadrado.style.top = posicaoY + "px";
+        }
+
+        window.addEventListener("keydown", moverQuadrado);
+    </script>
+</body>
+</html>
