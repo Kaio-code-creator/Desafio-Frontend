@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Botão de Mudança de Cor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black; /* Inicialmente, definimos o fundo como preto */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alternarCor()">Alternar Cor</button>
+
+    <script>
+        let corAtual = "black"; // Inicialmente, definimos a cor atual como preta
+
+        function alternarCor() {
+            const body = document.body;
+            if (corAtual === "black") {
+                body.style.backgroundColor = "white"; // Alterna para branco
+                corAtual = "white";
+            } else {
+                body.style.backgroundColor = "black"; // Alterna de volta para preto
+                corAtual = "black";
+            }
+        }
+    </script>
+</body>
+</html>
