@@ -1,109 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1/7</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptimusTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <a class="nav-brand" href="index.html"><img src="logo" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportdContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">OptimusTech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Recursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Cadastrar</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <h5 id="h5">Sobre nós</h5>
-    <h1 id="h1">Por que somos diferentes?</h1>
-    <p id="p1">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de <br>
-    todo o mundo a se concentrarem naquilo que é realmente importante para eles.</p>
+  <nav>
+    <img src="assets/images/logo.svg"/> 
+    <div class="sideMenu">
+      <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
+    </div>
+    <div class="menu">
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Recursos</a>
+        <a href="#">Sobre nós</a>
+      </div>
+      <div class="buttons">
+        <button>Entrar</button>
+        <button class="signUp">Cadastrar</button>
+      </div>
+    </div>
+  </nav>
+ 
+  <section class="about-us">
+    <span>Sobre nós</span>
+    <h1>Por que somos diferentes?</h1>
+    <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+  </section>
 
-    <div class="d"><div id="d1">400+ </div><p><strong>Projetos concluídos</strong></p><p>Nós ajudamos a construir mais de<br> 400 projetos incríveis.</p> </div>
-    <div class="d"><div id="d1">100+ </div><p><strong>Colaboradores</strong></p><p>Temos mais de 100 colaboradores<br> no nosso time que se preucupam<br> com nossos clientes.</p> </div>
-    <div class="d"><div id="d1">20k </div><p><strong>Downloads</strong></p><p>Nossos projetos que estão<br> disponíveis em lojas já foram<br> baixados mais de 20.000 vezes.</p> </div>
-    <div class="d"><div id="d1">500+ </div><p><strong>Reviews 5 estrelas</strong></p><p>Estamos orgulhosos de contar<br> com mais de 500 reviews 5 estrelas em<br> nossos produtos.</p> </div>
-<br><br><br>
-<div class="vagas">
-    <h5 id="h5">Vagas abertas</h6>
-    <h3 id="vh"><strong>ESTAMOS PROCURANDO POR TALENTOS</strong></h3>
-    <h6 id="vh">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</h6>
-    <img src="imagens/trabalho.jpg" alt="pessoas conversando no trabalho">
-    <br><br><br>
-    <p id="pva"><strong>Design</strong></p>
-    <div class="caixa">
-        <p><strong>Product Designer</strong></p><br>
-        <p>Full- time   Faixa salarial: R$7.000</p>
-      </div>
-      
-      <div class="caixa">
-        <p><strong>UX Designer</strong></p>
-        <p>Full-time   Faixa salarial: R$6.000</p>
-      </div>
+  <section class="metrics">
+    <div class="metric">
+      <h1>400+</h1>
+      <span class="metric-title">Projetos concluídos</span>
+      <span>Nós ajudamos a construir mais de 400 projetos incríveis.</span>
+    </div>
+    <div class="metric">
+      <h1>100+</h1>
+      <span class="metric-title">Colaboradores</span>
+      <span>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</span>
+    </div>
+    <div class="metric">
+      <h1>20k</h1>
+      <span class="metric-title">Downloads</span>
+      <span>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</span>
+    </div>
+    <div class="metric">
+      <h1>500+</h1>
+      <span class="metric-title">Reviews 5 estrelas</span>
+      <span>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</span>
+    </div>
+  </section>
 
-      <p id="pva"><strong>Desenvolvimento de Software</strong></p>
-      
-      <div class="caixa">
-        <p><strong>Desenvolvedor(a)iOS</strong></p><br>
-        <p>Full- time   Faixa salarial: R$8.000</p>
-      </div>
-      
-      <div class="caixa">
-        <p><strong>Desenvolvedor(a) Front-end</strong></p>
-        <p>Full-time   Faixa salarial: R$7.000</p>
-      </div>
+  <section class="talents">
+    <span>Vagas abertas!</span>
+    <h2>Estamos procurando por talentos</h2>
+    <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+    <img src="assets/images/equipe.png" alt="Nosso time">
+  </section>
 
-        <div class="caixa">
-            <p><strong>Desenvolvedor(a) Back-end</strong></p>
-            <p>Full-time   Faixa salarial: R$8.000</p>
-        </div>
+  <section class="vagas-abertas">
+
+    <span class="area-principal">Design</span>
+
+    <div class="vaga">
+      <span class="titulo-vaga">Product Designer</span>
+      <div class="informacoes">
+        <span>Full-time</span>
+        <span>Faixa salarial: R$7.000</span>
+      </div>
     </div>
 
-    <div class="depoi">
-        <h5 id="h5">Veja o que nossos colaboradores falam sobre nós</h5>
-        <h3 id="vh">OptimusTech se importa com a saúde dos seus colaboradores e<br> sempre procura nos dar todo tipo de auxílio possivel.</h3>
-        <img id="perfil" src="imagens/foto de perfil.jpg" alt="Foto de perfil">
-        <p id="center"><strong>Kaio Alves</strong></p>
-        <p id="center">Desenvolvedor Web</p>
+    <div class="vaga">
+      <span class="titulo-vaga">UX Designer</span>
+      <div class="informacoes">
+        <span>Full-time</span>
+        <span>Faixa salarial: R$6.000</span>
+      </div>
     </div>
 
-    
-        <h3 id="h5"><strong>Acompanhe as nossas opurtinidades</strong></h5>
-        <p id="center">Seja o primeiro a saber quando novas vagas serão abertas!</p>
-        <textarea placeholder="Seu email" name="" id="text" cols="32" rows="1"></textarea>
-        <button>Cadastrar</button>
-        <footer>&#169 2022 OptimusTech. Todos os direitos reservados</footer>
+    <span class="area-principal">Desenvolvimento de Software</span>
+
+    <div class="vaga">
+      <span class="titulo-vaga">Desenvolvedor(a) iOS Pleno</span>
+      <div class="informacoes">
+        <span>Full-time</span>
+        <span>Faixa salarial: R$8.000</span>
+      </div>
     </div>
+
+    <div class="vaga">
+      <span class="titulo-vaga">Desenvolvedor(a) Front-end Júnior</span>
+      <div class="informacoes">
+        <span>Full-time</span>
+        <span>Faixa salarial: R$3.500</span>
+      </div>
+    </div>
+
+    <div class="vaga">
+      <span class="titulo-vaga">Desenvolvedor(a) Back-end</span>
+      <div class="informacoes">
+        <span>Estágio</span>
+        <span>Faixa salarial: R$2.000</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="depoimento">
+    <span>Veja o que nossos colaboradores falam sobre nós</span>
+    <h2>OptimusTech se importa com todos seus colaboradores, sempre procurando nos dar todo tipo de auxílio possível.</h2>
+    <img src="assets/images/avatar.png">
+    <span class="nome">Kaio Alves</span>
+    <span class="cargo">Desenvolvedor Web</span>
+  </section>
+
+  <footer>
+    <h2>Acompanhe as nossas oportunidades</h2>
+    <span>Seja o primeiro a saber quando novas vagas serão abertas!</span>
+    <form>
+      <input type="email" placeholder="Seu e-mail">
+      <button class="signUp">Cadastrar</button>
+    </form>
+    <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
 
