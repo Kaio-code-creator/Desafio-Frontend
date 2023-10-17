@@ -2,108 +2,83 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Exibe o site corretamente com base no dispositivo do usuário -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | 3-column preview card component</title>
   <style>
-    main {
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      flex-direction: column;
-    }
-
     body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0; /* Remova a margem padrão do body */
+      margin: 0; /* Remova a margem padrão do corpo */
     }
 
-   .caixa {
-    width: 250px;
-    height: 400px;
- 
-   }
-   .caixa.amarela {
-    background-color: rgb(192, 112, 8);
-   }
-   
-   #T {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-   }
-   
-   .caixa.azul {
-    background-color: rgb(4, 61, 107);
-  }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .caixa.verde {
-    background-color: green;
-  }
+    .caixa {
+      width: 100%; /* Use 100% da largura disponível */
+      max-width: 300px; /* Define uma largura máxima para as caixas */
+      margin: 10px; /* Adicione algum espaço entre as caixas */
+    }
 
-  p {
-    color: white;
-  }
+    .caixa.amarela {
+      background-color: rgb(192, 112, 8);
+    }
 
-  .imagem {
-    margin-top: 50px;
-    margin-left: 30px;
-    
-  }
+    .caixa.azul {
+      background-color: rgb(4, 61, 107);
+    }
 
-@media only screen and (min-width: 319px) and (max-width: 375px) {
- .caixa {
-  width: 200px;
-  height: 230px;
-  margin: auto;
-}
-  .imagem {
-    margin-top: 10px;
-  }
+    .caixa.verde {
+      background-color: green;
+    }
 
-}
+    #T {
+      font-size: 20px; /* Reduza o tamanho da fonte para melhor se ajustar em telas menores */
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
 
-@media only screen and (min-width: 374px) and (max-width: 700px)  {
-  .caixa {
-  width: 200px;
-  height: 250px;
-  margin: auto;
-}
-  main {
-    display: flow-root;
-  }
-  .imagem {
-    margin-top: 10px;
-  }
-}
+    p {
+      color: white;
+      text-align: center;
+    }
 
+    .imagem {
+      margin-top: 20px; /* Aumente o espaçamento superior para melhorar a aparência em telas menores */
+    }
 
-</style>
+    @media only screen and (min-width: 375px) {
+      .caixa {
+        max-width: 400px; /* Aumente a largura máxima para telas maiores */
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
     <div class="caixa amarela">
       <img class="imagem" src="images/favicon-32x32.png" alt="imagem">
-      <div id="T">Sedans</div> <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-        or on your next road trip.</p> 
-        
+      <div id="T">Sedans</div>
+      <p>Escolha um sedã por sua acessibilidade e excelente economia de combustível. Ideal para passeios na cidade ou em sua próxima viagem.</p>
     </div>
-           
 
     <div class="caixa azul">
       <img class="imagem" src="images/favicon-32x32.png" alt="imagem">
-      <div id="T">SUVs</div> <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-      and off-road adventures.</p>
+      <div id="T">SUVs</div>
+      <p>Escolha um SUV por seu interior espaçoso, potência e versatilidade. Perfeito para suas próximas férias em família e aventuras off-road.</p>
     </div>
-            
+
     <div class="caixa verde">
       <img class="imagem" src="images/favicon-32x32.png" alt="imagem">
-      <div id="T">Luxury</div> <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-      rental and arrive in style.</p>
+      <div id="T">Luxo</div>
+      <p>Passeie nas melhores marcas de carros sem os preços inflacionados. Aproveite o conforto aprimorado de um aluguel de luxo e chegue com estilo.</p>
     </div>
   </main>
 </body>
