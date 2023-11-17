@@ -42,6 +42,7 @@
         <p>Escolha "X" ou "O" para começar:</p>
         <button onclick="startGame('X')">X</button>
         <button onclick="startGame('O')">O</button>
+        <button onclick="resetGame()">Resetar</button>
         
         <div class="board" id="board"></div>
         
@@ -68,6 +69,15 @@
                 cell.addEventListener('click', () => makeMove(i));
                 document.getElementById('board').appendChild(cell);
             }
+        }
+
+        function resetGame() {
+            currentPlayer = null;
+            board = [];
+            gameOver = false;
+            document.getElementById('board').innerHTML = '';
+            document.getElementById('scoreX').textContent = '0';
+            document.getElementById('scoreO').textContent = '0';
         }
 
         function makeMove(index) {

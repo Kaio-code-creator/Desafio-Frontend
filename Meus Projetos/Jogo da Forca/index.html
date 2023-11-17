@@ -9,6 +9,7 @@
       align-items: center;
       height: 20;
       margin: 0;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     #game-container {
@@ -22,6 +23,11 @@
     #hangman {
       font-size: 24px;
     }
+
+    .dark {
+      background-color: #333;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -33,6 +39,7 @@
     <canvas id="stickman" width="200" height="200"></canvas>
     <br>
     <button id="restart">Reiniciar</button>
+    <button class="theme-button" onclick="toggleTheme()">Alterar Tema</button>
   </div>
 
 
@@ -45,6 +52,7 @@
 
     const canvas = document.getElementById('stickman');
     const context = canvas.getContext('2d');
+    let darkMode = false;
 
     function iniciarJogo() {
       palavraSelecionada = palavras[Math.floor(Math.random() * palavras.length)];
@@ -138,6 +146,21 @@
         }
       }
     });
+
+    function toggleTheme() {
+      const body = document.body;
+      const themeButton = document.querySelector('.theme-button');
+
+      if (darkMode) {
+        body.classList.remove('dark');
+        themeButton.textContent = 'Alterar Tema';
+      } else {
+        body.classList.add('dark');
+        themeButton.textContent = 'Tema Padrão';
+      }
+
+      darkMode = !darkMode;
+    }
   </script>
 </body>
 </html>

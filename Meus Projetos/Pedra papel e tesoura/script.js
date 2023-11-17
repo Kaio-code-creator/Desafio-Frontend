@@ -1,6 +1,7 @@
 const choices = ["tesoura", "pedra", "papel"];
     let playerScore = 0;
     let computerScore = 0;
+    let darkMode = false;
 
     document.getElementById("tesoura").addEventListener("click", () => playRound("tesoura"));
     document.getElementById("pedra").addEventListener("click", () => playRound("pedra"));
@@ -48,3 +49,18 @@ function resetGame() {
     updateScore();
     updateResult("Esperando sua jogada...");
 }
+
+function toggleTheme() {
+    const body = document.body;
+    const themeButton = document.querySelector('.theme-button');
+
+    if (darkMode) {
+      body.classList.remove('dark');
+      themeButton.textContent = 'Alterar Tema';
+    } else {
+      body.classList.add('dark');
+      themeButton.textContent = 'Tema Padrão';
+    }
+
+    darkMode = !darkMode;
+  }
