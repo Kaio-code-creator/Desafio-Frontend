@@ -9,11 +9,11 @@
 </head>
 <script src="_javascript/funcoes.js"></script>
 <script>
-    function calc_total(){
-        var qtd = parseInt(document.getElementById('cQtd').value);
-        tot = qtd * 1500;
-        document.getElementById('cTot').value = tot;
-    }
+    function calc_total() {
+			var qtd = parseInt(document.getElementById('cQtd').value);
+			tot = qtd * 1500;
+			document.getElementById('cTot').value = tot;
+		};
 </script>
 <body>
     <div id="interface">
@@ -48,14 +48,14 @@
         </section>
 
 
-        <form method="POST" id="fContato" oninput"calc_total()">
+        <form method="POST" id="fContato" oninput="calc_total()" >
             <fieldset id="usuario">
                 <legend>Identificação do Usuário</legend>
                     <p><label for="cNome">Nome:</label>
                         <input type="text" name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/></p>
 
                     <p><label for="cSenha">Senha:</label>
-                        <input type="password" name="tSenha" id"cSenha" size="8" maxlength="8" placeholder="Digita uma senha"/></p>
+                        <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Digita uma senha"/></p>
 
                     <p><lable>E-mail:</label>
                         <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/></p>
