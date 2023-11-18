@@ -136,7 +136,7 @@ section#corpo {
 	width: 500px;
 	float: left;
 	border-right: 1px solid #606060;
-	padding-right: 15px;*/
+	padding-right: 15px;
 }
 
 article#noticia-principal h2 {
@@ -231,7 +231,6 @@ aside#lateral h2 {
 	background-color: #606060;
 	font-size: 13pt;
 	color: #ffffff;
-	padding: 
 }
 
 footer#rodape {
