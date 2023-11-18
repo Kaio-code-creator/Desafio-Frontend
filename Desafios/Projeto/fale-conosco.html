@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Tudo sobre Google Glass</title>
-    <link rel="stylesheet" href="_css/estilo.css"/>
-    <link rel="stylesheet" href="_css/form.css">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
 
 </head>
-<script src="_javascript/funcoes.js"></script>
+<script  language="javascript" src="_javascript/funcoes.js"></script>
 <script>
-    function calc_total() {
-			var qtd = parseInt(document.getElementById('cQtd').value);
-			tot = qtd * 1500;
-			document.getElementById('cTot').value = tot;
-		};
+    function calc_total(){
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
+    }
 </script>
 <body>
     <div id="interface">
@@ -48,14 +48,14 @@
         </section>
 
 
-        <form method="POST" id="fContato" oninput="calc_total()" >
+        <form method="POST" id="fContato" oninput"calc_total()">
             <fieldset id="usuario">
                 <legend>Identificação do Usuário</legend>
                     <p><label for="cNome">Nome:</label>
                         <input type="text" name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/></p>
 
                     <p><label for="cSenha">Senha:</label>
-                        <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Digita uma senha"/></p>
+                        <input type="password" name="tSenha" id"cSenha" size="8" maxlength="8" placeholder="Digita uma senha"/></p>
 
                     <p><lable>E-mail:</label>
                         <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"/></p>
@@ -127,7 +127,7 @@
 <footer id="rodape">
         <p>Copyright &copy; 2013 - by Pablo Rocha <br/>
         <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | 
-        <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a> </p>
+        <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter<a/> </p>
         </footer>
     </div>  
 </body>
