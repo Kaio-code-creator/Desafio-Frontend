@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maior valor</h1>
+    <button onclick="calcular()">Clique para começar</button>
+    <section id="txt">O resultado vai aparecer aqui...</section>
+
+    <script>
+       function calcular() {
+            let n1 = Number(window.prompt('Digite um número:'))
+            let n2 = Number(window.prompt('Digite outro número:'))
+            let res = document.querySelector('section#txt')
+
+            if(n1 > n2) {
+                res.innerHTML = `Analisando os valores <strong>${n1}</strong> e <strong>${n2}</strong>, o maior valor é <strong>${n1}</strong>`
+            } else if (n1 < n2) {
+                res.innerHTML += `Analisando os valores <strong>${n1}</strong> e <strong>${n2}</strong>, o maior valor é <strong>${n2}</strong>` 
+            } else {
+                res.innerHTML += `Analisando os valores <strong>${n1}</strong> e <strong>${n2}</strong>, ambos são <strong>IGUAIS</strong>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Finder</title>
+  <style>
+    #search-form {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #search-input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    #game-results {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .game-card {
+      display: inline-block;
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .game-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .game-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .game-rating {
+      margin-bottom: 5px;
+    }
+
+    .game-year {
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .game-platform {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="search-form">
+    <form onsubmit="submitSearch(event)">
+      <input type="text" id="search-input" placeholder="Digite o nome do jogo">
+      <button type="submit">Pesquisar</button>
+    </form>
+  </div>
+
+  <div id="game-results">
+    <div class="game-card">
+      <img class="game-image" src="Imagens/Rogue Galaxy.webp" alt="Nome do Jogo 1">
+      <h2 class="game-title">Rogue Galaxy</h2>
+      <p class="game-rating">Nota: 8.0</p>
+      <p class="game-year">Ano de Lançamento: 2007</p>
+      <p class="game-platform">Plataforma: PS2, PS4</p>
+      <p class="game-description">Rogue Galaxy é um RPG da Level 5 e publicado pela Sony Computer Entertainment em 2007. Foi lançado na América do Norte em janeiro de 2007. O Original Rogue Galaxy foi lançado apenas no Japão, e agora é um jogo raro. A versão mais recente do jogo apresentava vários personagens principais, cada um com duas armas e personalidades diferentes. O sistema de batalha do jogo é como Dark Chronicle, um dos videogames anteriores da Level 5. Também retirado de Dark Chronicle está o novo Sistema de Síntese do jogo, exceto que desta vez um sapo é apresentado. Rogue Galaxy também foi portado para o PlayStation 4 PS4 em dezembro de 2015 como um jogo para download.</p>
+    </div>
+    <div class="game-card">
+      <img class="game-image" src="Imagens/Age of Empires.webp" alt="Nome do Jogo 2">
+      <h2 class="game-title">Age of Empires 2</h2>
+      <p class="game-rating">Nota: 8.7</p>
+      <p class="game-year">Ano de Lançamento: 2021</p>
+      <p class="game-platform">Plataforma: PC, PS5, Xbox Series X</p>
+      <p class="game-description">Descrição do Jogo 2...</p>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const gameResults = document.getElementById('game-results');
+
+    function submitSearch(event) {
+      event.preventDefault();
+      const query = searchInput.value;
+      searchGames(query);
+    }
+
+    function searchGames(query) {
+      const gameCards = document.getElementsByClassName('game-card');
+      for (let i = 0; i < gameCards.length; i++) {
+        const gameCard = gameCards[i];
+        const gameTitle = gameCard.querySelector('.game-title').textContent.toLowerCase();
+
+        if (gameTitle.includes(query.toLowerCase())) {
+          gameCard.style.display = 'inline-block';
+        } else {
+          gameCard.style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
